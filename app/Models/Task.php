@@ -11,11 +11,13 @@ class Task extends Model
 
     protected $fillable = [
         'title', 
-        'is_done'
+        'is_done',
+        'user_id'
     ];
 
     protected $casts = [
         'is_done' => 'bool',
+        'user_id' => 'int'
     ];
 
 
